@@ -45,7 +45,7 @@ A Python‐based tool and Streamlit application to scrape restaurant data, build
 5. **Build the FAISS index**  
    Run your scraper to generate `csv_vector_index.faiss` and `csv_metadata.json` in the project root:
    ```bash
-   python main1.py --config config.yaml
+   python main1.py 
    ```
 
 ---
