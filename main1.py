@@ -13,7 +13,7 @@ URLS = [
     "https://www.asia-kitchen.com/menuview.html"
 ]
 
-OUTPUT_CSV = "restaurants_preprocessed.csv"
+OUTPUT_CSV = "webscrap.csv"
 
 FIELDNAMES = [
     "Restaurant",
