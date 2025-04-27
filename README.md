@@ -65,20 +65,12 @@ TOP_K = 5
 
 ## 🏃 Usage
 
-### 1. Scrape & Index Data
-
-```bash
-python main.py --config config.yaml
-```  
-This populates `output/` and writes `csv_vector_index.faiss` + `csv_metadata.json` for RAG.
-
-### 2. Launch the Chatbot
+### 1. Launch the Chatbot
 
 ```bash
 streamlit run main4.py
 ```  
 Then open http://localhost:8501 in your browser.
-
 
 ---
 
