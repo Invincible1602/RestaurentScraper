@@ -50,33 +50,7 @@ A Python‐based tool and Streamlit application to scrape restaurant data, build
 
 ---
 
-## ⚙️ Configuration
-
-All settings live in `config.yaml`:
-
-```yaml
-search_locations:
-  - "New York, NY"
-  - "San Francisco, CA"
-
-use_selenium: true
-headless: true
-
-output:
-  format: csv            # or 'json'
-  directory: ./output/
-
-logging:
-  level: INFO
-  file: logs/scraper.log
-
-# Proxy (optional)
-proxy:
-  enabled: false
-  url: http://user:pass@proxy.server:8080
-```
-
-Adjust the **RAG** parameters at the top of `app.py` (or wherever you import):
+Adjust the **RAG** parameters at the top of `main4.py` (or wherever you import):
 
 ```python
 HF_API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3"
@@ -133,19 +107,6 @@ Then open http://localhost:8501 in your browser.
 - **Thresholds & K**: Tweak `RELEVANCE_THRESHOLD` and `TOP_K` for broader/narrower context.
 - **Embedding Model**: Swap to any compatible SentenceTransformer (e.g. `paraphrase-multilingual-MiniLM-L12-v2`).
 - **UI Layout**: Modify `streamlit` calls (e.g. add images, tables).
-
----
-
-## 🧪 Testing
-
-- **Smoke test** without full dataset:
-  ```bash
-  python main.py --locations "Testville" --limit 2
-  ```
-- **Streamlit test**:
-  ```bash
-  streamlit run app.py -- --debug
-  ```
 
 ---
 
