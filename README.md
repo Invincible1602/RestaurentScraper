@@ -105,13 +105,19 @@ Then open http://localhost:8501 in your browser.
 ## 🤝 Contributing
 
 1. Fork & clone
-2. Create a feature branch (`git checkout -b feature/foo`)
+2. Create a feature branch 
 3. Commit & push
 4. Open a Pull Request
 
 Follow code style and add tests for new features.
 
 ---
+
+## Screenshot
+
+<img width="1470" alt="Screenshot 2025-04-28 at 4 56 41 PM" src="https://github.com/user-attachments/assets/024c8803-8b20-4531-aefe-724ff4b2292a" />
+
+
 
 ## 📜 License
 
