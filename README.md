@@ -77,7 +77,7 @@ Then open http://localhost:8501 in your browser.
 ## 🔍 How It Works
 
 1. **Data Ingestion**: `main1.py` uses Selenium or HTTP requests + BeautifulSoup to scrape restaurant details into CSV/JSON.
-2. **Vector Indexing**: Text descriptions are embedded with **all-MiniLM-L6-v2** and stored in a FAISS `IndexFlatL2` (see `main1.py`).
+2. **Vector Indexing**: Text descriptions are embedded with **all-MiniLM-L6-v2** and stored in a FAISS `IndexFlatL2` (see `main3.py`).
 3. **Streamlit App**:
    - Loads embedding model (`SentenceTransformer`) and FAISS index via `@st.cache_resource`.
    - On user query:
